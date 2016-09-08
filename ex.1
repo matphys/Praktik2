@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int tmp;
+    int a[20]={31, 30, 69, 8, 74, 11, 40, 7, 48, 26, 65, 43, 73, 89, 44, 67, 41, 95, 55, 68};
+    for (int i=0; i<20; i++)
+    {for (int k = i + 1; k < 20; k++)
+        {
+            if (a[i] > a[k])
+            {
+                tmp = a[i];
+                a[i] = a[k];
+                a[k] = tmp;
+            }
+        }
+    }
+    for (int i=0; i<20; i++)
+    cout<<a[i]<<' ';
+    return 0;
+}
