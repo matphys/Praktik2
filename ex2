@@ -1,0 +1,25 @@
+#include <cmath>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int a[20]={31, 30, 69, 8, 74, 11, 40, 7, 48, 26, 65, 43, 73, 89, 44, 67, 41, 95, 55, 68};
+    for (int k=0; k<20; k++)
+
+    
+        cout<<a[k]<<' ';
+    cout<<endl;
+    double i=0.5;
+    while (0.001<(exp(i)-1-cos(i))<0.001)
+    {
+        if (exp(i)-1-cos(i)>0)
+            i=i/2;
+        else
+            i=(1+i)/2;
+
+    }
+    cout<<i;
+    return 0;
+}
